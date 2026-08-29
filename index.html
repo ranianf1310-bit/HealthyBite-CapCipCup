@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HealthyBite - Menu Kantin</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <header>
+        <div class="logo">
+            Healthy<span>Bite</span>
+        </div>
+
+        <div>☰</div>
+    </header>
+
+    <section class="hero">
+
+        <small>HEALTHY CANTEEN</small>
+
+        <h1>Menu Kantin</h1>
+
+        <p>
+            CapCipCup pilih makanan sehat sesuai indikator HealthyFood
+        </p>
+
+    </section>
+
+    <div class="canteen">
+
+        <div class="store-icon">
+            🏪
+        </div>
+
+        <div>
+
+            <h2 id="namaKantin">
+                Kantin Mbak Wati
+            </h2>
+
+            <span class="tag">
+                MENU HARI INI
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="search">
+
+        🔎
+
+        <input
+            type="text"
+            id="search"
+            placeholder="Cari menu..."
+            oninput="tampilkanMenu()"
+        >
+
+    </div>
+
+    <div class="filters">
+
+        <button
+            class="active"
+            onclick="ubahFilter('semua', this)">
+            Semua
+        </button>
+
+        <button
+            onclick="ubahFilter('hijau', this)">
+            🟢 Lebih seimbang
+        </button>
+
+        <button
+            onclick="ubahFilter('kuning', this)">
+            🟡 Perlu dibatasi
+        </button>
+
+        <button
+            onclick="ubahFilter('merah', this)">
+            🔴 Batasi frekuensi
+        </button>
+
+    </div>
+
+    <div
+        class="menu-list"
+        id="menuList">
+    </div>
+
+    <div class="legend">
+
+        <b>🚦 Arti indikator HealthyBite</b>
+
+        <br>
+
+        🟢 <b>Lebih seimbang</b>
+        — sangat dianjurkan, nutrisi seimbang dan kaya gizi, 
+        ideal untuk dikonsumsi sehari-hari.
+
+        <br>
+
+        🟡 <b>Perlu dibatasi</b>
+        — batasi asupan makanan ini, sebaiknya
+        hanya dikonsumsi dalam jumlah tertentu atau
+        beberapa kali dalam seminggu.
+
+        <br>
+
+        🔴 <b>Batasi frekuensi</b>
+        — makanan ini sebaiknya dikurangi konsumsinya
+        secara signifikan, kandungannya kurang baik jika berlebihan.
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
