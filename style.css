@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #e7ece9;
+    color: #17231d;
+}
+
+.app {
+    max-width: 480px;
+    min-height: 100vh;
+    margin: auto;
+    background: #f7f9f7;
+}
+
+header {
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 22px;
+    border-bottom: 1px solid #e5e9e6;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #08a66c;
+}
+
+.logo span {
+    color: #17231d;
+    font-weight: normal;
+}
+
+.hero {
+    background: linear-gradient(145deg, #049b65, #13b77b);
+    color: white;
+    padding: 30px 22px 45px;
+    border-radius: 0 0 45px 45px;
+}
+
+.hero small {
+    font-size: 11px;
+    opacity: 0.85;
+}
+
+.hero h1 {
+    font-size: 29px;
+    margin: 8px 0;
+}
+
+.hero p {
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.canteen {
+    margin: -25px 18px 16px;
+    background: white;
+    border-radius: 22px;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    box-shadow: 0 7px 25px rgba(0,0,0,0.07);
+}
+
+.store-icon {
+    width: 53px;
+    height: 53px;
+    background: #def7e9;
+    border-radius: 16px;
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+}
+
+.canteen h2 {
+    font-size: 18px;
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 5px 8px;
+    border-radius: 12px;
+    background: #def7e9;
+    color: #087e50;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.search {
+    margin: 0 18px 10px;
+    padding: 12px 14px;
+    background: white;
+    border: 1px solid #e1e7e3;
+    border-radius: 16px;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    width: 88%;
+    font-size: 13px;
+}
+
+.filters {
+    display: flex;
+    gap: 7px;
+    overflow-x: auto;
+    padding: 0 18px 12px;
+}
+
+.filters button {
+    border: none;
+    border-radius: 17px;
+    padding: 9px 11px;
+    white-space: nowrap;
+    background: white;
+    color: #65716b;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.filters button.active {
+    background: #08a66c;
+    color: white;
+}
+
+.menu-list {
+    padding: 0 18px;
+}
+
+.food {
+    background: white;
+    border-radius: 18px;
+    padding: 12px;
+    margin-bottom: 9px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.04);
+}
+
+.food-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 14px;
+    background: #edf2ee;
+    display: grid;
+    place-items: center;
+    font-size: 27px;
+    flex-shrink: 0;
+}
+
+.food-info {
+    flex: 1;
+}
+
+.food-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.food-desc {
+    font-size: 10px;
+    color: #75817b;
+    margin-top: 4px;
+    line-height: 1.35;
+}
+
+.price {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.indicator {
+    width: 70px;
+    text-align: center;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.dot {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+    margin: 0 auto 4px;
+}
+
+.green {
+    color: #078d59;
+}
+
+.hijau .dot {
+    background: #09aa6b;
+}
+
+.yellow {
+    color: #bb8300;
+}
+
+.kuning .dot {
+    background: #efb21b;
+}
+
+.red {
+    color: #cc3e45;
+}
+
+.merah .dot {
+    background: #df4b51;
+}
+
+.legend {
+    margin: 10px 18px 25px;
+    padding: 14px;
+    background: #edf5ef;
+    border-radius: 17px;
+    color: #68756e;
+    font-size: 10px;
+    line-height: 1.6;
+}
+
+.legend b {
+    color: #26332d;
+}
+
+.empty {
+    background: white;
+    padding: 28px;
+    text-align: center;
+    border-radius: 18px;
+    color: #78827d;
+    font-size: 12px;
+}
