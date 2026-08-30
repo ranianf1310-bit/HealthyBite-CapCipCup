@@ -49,7 +49,7 @@ const menu = [
         indikator: "hijau"
     },
     {
-        nama: "Es Minuman Saset",
+        nama: "Es Minuman Sachet",
         harga: 3000,
         emoji: "🥤",
         deskripsi: "Minuman instan bubuk dengan berbagai rasa",
